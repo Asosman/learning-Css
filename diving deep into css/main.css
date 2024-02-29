@@ -57,4 +57,11 @@ body{
 .main-nav__item a{
     color:#0e4f1f;
     text-decoration:none;
+    font-weight:bold;
+    padding:3px 0;
+}
+.main-nav__item a:hover,
+.main-item a:active{
+    color:#fff;
+    border-bottom:3px solid #fff;
 }
