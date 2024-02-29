@@ -22,7 +22,21 @@ body{
 .main-header{
     width:100%;
     background-color:#2ddf5c; 
-    padding:8px 6px;
+    /* padding:8px 6px; */
+}
+.main-header > div{
+    display: inline-block;
+}
+.main-header nav{
+    display:inline-block;
+    text-align:right;
+    width:calc(100% - 50px);
+
+}
+.main-nav__items{
+    padding:8px;
+    margin:0;
+    list-style: none;
 }
 .main-nav__item{
     display:inline-block;
