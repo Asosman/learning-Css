@@ -71,6 +71,24 @@ body{
 .plan__feature{
     margin:8px 0;
 }
+
+.button{
+    color:#fff;
+    background-color: #0e4f1f;
+    font:inherit;
+    padding:8px;
+    border-radius: 8px;
+    border:1.5px solid #0e4f1f;
+    font-weight: bold;
+    cursor:pointer;
+
+}
+
+.button:hover,
+.button:active{
+    background-color: #fff;
+    color:#0e4f1f;
+}
 .main-header{
     width:100%;
     background-color:#2ddf5c; 
