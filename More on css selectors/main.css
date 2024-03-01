@@ -13,9 +13,15 @@ a {
     color: white;
     margin: 10px;
 }
+a.active{
+    color:#521751;
+}
 
 .main-section {
     height: 800px;
     border: 1px solid #ccc;
     padding: 16px;
+}
+.highlited{
+    border-color: #fa923f;
 }
