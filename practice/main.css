@@ -114,12 +114,12 @@ body{
 }
 
 .key-feature__image{
-    height:150px;
-    width:150px;
-    background-color: #fff;
+    height:128px;
+    width:128px;
+    background-color: #ffcede;
     border-radius:50%;
     margin:0 auto;
-    border:2px solid #0e4f1f;
+    border:2px solid #424242;
 }
 
 .key-feature{
