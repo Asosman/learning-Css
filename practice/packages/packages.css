@@ -2,6 +2,10 @@ main{
     padding-top:32px;
 }
 
+.clearfix{
+    clear: both;
+}
+
 .packages{
     padding:32px;
     width:80%;
@@ -39,10 +43,20 @@ main{
 
 #free{
     background-color: rgba(234,252,237,0.95);
+    border-left:4px solid #0e4f1f;
+    border-right:none;
+    float:right;
+    text-align: right;
+}
+
+#free:hover,
+#free:active{
+    border-left-color: #ff5454;
 }
 
 #prenium{
     background-color: rgba(14,79,31,0.95);
+    /* clear: both; */
 }
 
 #prenium .packages__title{

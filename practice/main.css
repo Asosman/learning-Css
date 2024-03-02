@@ -1,11 +1,4 @@
-body{
-    font-family:'Montserrat',sans-serif;
-    margin:0;
-    
-}
-*{
-    box-sizing: border-box;
-}
+
 
 #preview-plan {
     background:url("freedom.jpg");
@@ -24,6 +17,11 @@ body{
     column-width: 12;
     text-align: center;
 }
+.plan__lists{
+    width:80%;
+    margin:0 auto;
+}
+
 .plan{
     background-color: #d5ffdc;
     padding:16px;
