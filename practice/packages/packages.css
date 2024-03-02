@@ -15,3 +15,26 @@ main{
     text-decoration: none;
     display: block;
 }
+
+.packages__subtitle{
+    color:#979797;
+}
+
+.packages__info{
+    border:1px solid #0e4f1f;
+    color:#0e4f1f;
+    font-size:20px;
+    padding:16px;
+}
+
+#plus{
+    background-color: rgba(213,255,220,0.95);
+}
+
+#free{
+    background-color: rgba(234,252,237,0.95);
+}
+
+#prenuim{
+    background-color: rgba(14,79,31,0.95);
+}
