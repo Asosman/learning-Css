@@ -32,10 +32,16 @@ body {
     margin: 10px;
 }
 
-.parent .child-1{
+/* .parent .child-1{
   position:fixed;
   width:100%;
   top:0;
   left:0;
   margin:0;
+} */
+
+.parent .child-1{
+  position:relative;
+  top:500px;
+  right:100px;
 }
