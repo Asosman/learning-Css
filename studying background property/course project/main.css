@@ -2,10 +2,12 @@
 
 #preview-plan {
     background:url("freedom.jpg");
+    background-size:cover;
     width:100%;
     height: 520px;
     padding:16px;
     position:relative;
+    
 }
 #preview-plan h1{
     color:#fff;
