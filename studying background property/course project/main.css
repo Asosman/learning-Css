@@ -9,7 +9,8 @@
     background-clip:border-box;
     background-attachment: local; */
     /* The background properties are arranged according the pattern of writing it in shorthand */
-    background-image:linear-gradient(to right, green 90%,red 80%,black);
+    /* background-image:linear-gradient(to right, green 90%,red 80%,black); */
+    background-image:radial-gradient(circle 40px at 40% 30%, red,green,orange);
     width:100%;
     height: 520px;
     padding:16px;
