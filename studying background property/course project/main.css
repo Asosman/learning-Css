@@ -1,7 +1,7 @@
 
 
 #preview-plan {
-     background:url("freedom.jpg") left 10% bottom 20%/cover no-repeat border-box local ; 
+     background:url("./images/freedom.jpg") left 10% bottom 20%/cover no-repeat border-box local ; 
     /* background-position:left 10% bottom 30%;
     background-size:cover;
     background-repeat:no-repeat;
