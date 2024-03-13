@@ -10,23 +10,29 @@ console.log(backdropElement);
 
 for( var i = 0; i < selectPlanButton.length; i++){
     selectPlanButton[i].addEventListener('click',function(){
-        backdropElement.style.display = 'block';
-        modal.style.display= 'block';
+        // backdropElement.style.display = 'block';
+        // modal.style.display= 'block';
+        backdropElement.classList.add('open');
+        modal.classList.add('open');
     })
 }
 
 noSelctButton.addEventListener('click',closeModal)
 backdropElement.addEventListener('click',function(){
-    mobileNav.style.display = 'none';
+   mobileNav.classList.remove('open')
     closeModal();
 })
 
 function closeModal(){
-    backdropElement.style.display = 'none';
-    modal.style.display = 'none';
+    // backdropElement.style.display = 'none';
+    // modal.style.display = 'none';
+    backdropElement.classList.remove('open');
+    modal.classList.remove('open');
 }
 
 toggleButton.addEventListener('click',function(){
-    mobileNav.style.display = 'block';
-    backdropElement.style.display = 'block';
+    // mobileNav.style.display = 'block';
+    // backdropElement.style.display = 'block';
+    mobileNav.classList.add('open');
+    backdropElement.classList.add('open');
 })

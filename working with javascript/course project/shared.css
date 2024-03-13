@@ -177,3 +177,8 @@ body{
 .main-footer__link a:active{
     color:#ccc;
 }
+
+
+.open{
+    display: block !important;
+}
