@@ -1,7 +1,7 @@
 
 
 #preview-plan {
-     background:linear-gradient(to top, rgb(80,68,18,0.6) 10%, transparent),url("./images/freedom.jpg") left 10% bottom 90%/cover no-repeat border-box local,#ff1b68 ; 
+     background:linear-gradient(to top, rgb(80,68,18,0.6) 10%, transparent),url("./images/freedom.jpg") center/cover no-repeat border-box local,#ff1b68 ; 
     /* background-position:left 10% bottom 30%;
     background-size:cover;
     background-repeat:no-repeat;
@@ -25,16 +25,7 @@
     font-size:1.6rem;
 }
 
-@media(min-width:40rem){
-    #preview-plan{
-        height: 40vh;
-        background-position: 50% 25%;
-    }
 
-    #preview-plan h1{
-        font-size: 3rem;
-    }
-}
 
 .section-title{
     color:#2ddf5c; 
@@ -42,25 +33,25 @@
     column-width: 12;
     text-align: center;
 }
-.plan__lists{
-    width:80%;
-    margin:0 auto;
+/* .plan__lists{
+    width:100%;
+    margin:0 auto; 
     text-align: center;
-}
+} */
 
 .plan{
     background-color: #d5ffdc;
     padding:1rem;
     margin:6px;
     text-align:center;
-    width:30%;
-    display:inline-block;
-    vertical-align: middle;
+    width:100%;
+    display:block;
+    
 }
 .plan-highlighted{
     background-color:#19b84c;
     color:#fff;
-    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+    /* box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5); */
 }
 .plan__annotation{
     color:#19b84c;
@@ -209,3 +200,14 @@
     background: #ff5454;
     border-color: #ff5454;
   }
+
+  @media(min-width:40rem){
+    #preview-plan{
+        height: 40vh;
+        background-position: 50% 25%;
+    }
+
+    #preview-plan h1{
+        font-size: 3rem;
+    }
+}
