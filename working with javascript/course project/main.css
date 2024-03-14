@@ -22,7 +22,18 @@
     position:absolute;
     bottom:16px;
     font-weight:bold;
-    
+    font-size:1.6rem;
+}
+
+@media(min-width:40rem){
+    #preview-plan{
+        height: 40vh;
+        background-position: 50% 25%;
+    }
+
+    #preview-plan h1{
+        font-size: 3rem;
+    }
 }
 
 .section-title{
