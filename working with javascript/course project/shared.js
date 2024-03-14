@@ -13,11 +13,14 @@ for( var i = 0; i < selectPlanButton.length; i++){
         // backdropElement.style.display = 'block';
         // modal.style.display= 'block';
         backdropElement.classList.add('open');
-        modal.classList.add('open');
+      if(modal){
+          modal.classList.add('open');
+      }
     })
 }
-
-noSelctButton.addEventListener('click',closeModal)
+if(modal){
+    noSelctButton.addEventListener('click',closeModal)
+}
 backdropElement.addEventListener('click',function(){
    mobileNav.classList.remove('open')
     closeModal();
@@ -27,7 +30,9 @@ function closeModal(){
     // backdropElement.style.display = 'none';
     // modal.style.display = 'none';
     backdropElement.classList.remove('open');
-    modal.classList.remove('open');
+    if(modal){
+        modal.classList.remove('open');
+    }
 }
 
 toggleButton.addEventListener('click',function(){
