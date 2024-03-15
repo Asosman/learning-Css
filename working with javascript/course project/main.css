@@ -22,6 +22,7 @@
     margin-top:3.75rem;
     /* border:4px dashed #ffee32; */
 }
+
 #preview-plan h1{
     color:#fff;
     position:absolute;
@@ -37,6 +38,7 @@
     border-top-left-radius: 12;
     column-width: 12;
     text-align: center;
+    margin:1.5rem;
 }
 
 
@@ -68,6 +70,7 @@
 
 .plan__price{
     color:#807878;
+    margin:2rem;
 }
 
 .plan-highlighted .plan__title{
@@ -75,12 +78,17 @@
 }
 
 .plan-highlighted .plan__price{
-    color:#fff;
+    color:black;
+  
 }
 
+.plan-highlighted .plan__title{
+    color:#fff;
+    padding:1rem;
+}
 .plan__features{
     list-style-type:none;
-    margin:0;
+    margin:1.4rem;
     padding:0;
 }
 
@@ -142,6 +150,7 @@
 .key-feature{
     display: block;
     width:100%;
+    margin-bottom: 1.5rem;
 }
 
 .key-feature__description{
@@ -149,6 +158,7 @@
     font-weight: bold;
     font-size:0.8rem;
     text-align: center;
+
 }
 /*added the modal design*/
 
@@ -201,7 +211,7 @@
     border-color: #ff5454;
   }
 
-  @media(min-width:40rem){
+  @media(min-width:40rem) and (min-height:60rem){
     #preview-plan{
         height: 40vh;
         background-position: 50% 25%;
@@ -211,32 +221,37 @@
         font-size: 3rem;
     }
 
+}
+
+@media (min-width:40rem){ 
     .plan__lists{
-    width:100%;
-    margin:0 auto; 
-    text-align: center;
-   } 
-
-    .plan{
-        width:30%;
-        display:inline-block;
-        vertical-align: center;
-        min-width: 10rem;
-        max-width: 25rem;     
-    }
-
-    .plan-highlighted{
-        box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
-    }
-
-    .key-feature{
-        display:inline-block;
-        width:30%;
-        vertical-align: top;
-        max-width: 25rem;
-    }
+        width:100%;
+        margin:0 auto; 
+        text-align: center;
+        
+       } 
     
-    .key-feature__description{
-        font-size:1.2rem;
-    }
+        .plan{
+            width:30%;
+            display:inline-block;
+            vertical-align: center;
+            min-width: 10rem;
+            max-width: 25rem;     
+        }
+    
+        .plan-highlighted{
+            box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+        }
+    
+        .key-feature{
+            display:inline-block;
+            width:30%;
+            vertical-align: top;
+            max-width: 25rem;
+          
+        }
+        
+        .key-feature__description{
+            font-size:1.2rem;
+        }
 }
