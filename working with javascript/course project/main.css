@@ -1,4 +1,8 @@
-
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
 
 #preview-plan {
      background:linear-gradient(to top, rgb(80,68,18,0.6) 10%, transparent),url("./images/freedom.jpg") center/cover no-repeat border-box local,#ff1b68 ; 
@@ -12,15 +16,16 @@
     /* background-image:linear-gradient(to right, green 90%,red 80%,black); */
     /* background-image:radial-gradient(circle 40px at 40% 30%, red,green,orange); farthest side closest side farthest corner closest corner */
     width:100vw;
-    height: 33vh;
+    height: 30vh;
     padding:1rem;
     position:relative;
+    margin-top:3.75rem;
     /* border:4px dashed #ffee32; */
 }
 #preview-plan h1{
     color:#fff;
     position:absolute;
-    bottom:16px;
+    bottom:32px;
     font-weight:bold;
     font-size:1.6rem;
 }
