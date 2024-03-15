@@ -19,6 +19,12 @@ body{
     display:none;
 }
 
+
+main{
+    min-height: calc(100vh - 3.5rem - 8rem);
+    margin-top: 3.5rem;
+}
+
 .main-header{
     width:100%;
     background-color:#2ddf5c; 
@@ -46,8 +52,7 @@ body{
     color:#0e4f1f;
     font-weight: bold;
     text-decoration: none;
-    font-size:1.3rem;
-    height:22px;
+    height: 2.5rem;
     display:inline-block;
     vertical-align: middle;
 }
@@ -155,7 +160,10 @@ body{
     padding:2rem;
     background-color:#000;
 }
-
+.main-footer__link{
+    display:block;
+    margin:0.1rem 0;
+}
 .main-footer__links{
     list-style-type: none;
     padding:0;
@@ -163,10 +171,7 @@ body{
     text-align: center;
     vertical-align: center;
 }
-.main-footer__link{
-    display:inline-block;
-    margin:0 1rem;
-}
+
 
 .main-footer__link a{
     color:#fff;
@@ -188,4 +193,12 @@ body{
         display:inline-block;
     }
     
+    .main-footer__link{
+        display:inline-block;
+        margin:0 1rem;
+    }
+
+    .toggle-button {
+       display:none;
+      }
 }
