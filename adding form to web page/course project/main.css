@@ -49,6 +49,7 @@
     text-align:center;
     width:100%;
     display:block;
+ 
     
 }
 .plan-highlighted{
@@ -210,7 +211,7 @@
     border-color: #ff5454;
   }
 
-  @media(min-width:40rem) and (min-height:60rem){
+  @media(min-width:40rem) and (min-height:40rem){
     #preview-plan{
         height: 40vh;
         background-position: 50% 25%;
@@ -233,7 +234,7 @@
         .plan{
             width:30%;
             display:inline-block;
-            vertical-align: center;
+            vertical-align: middle;
             min-width: 10rem;
             max-width: 25rem;     
         }
