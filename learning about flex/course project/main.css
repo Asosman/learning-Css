@@ -48,7 +48,8 @@
     margin:6px;
     text-align:center;
     width:100%;
-    display:block;
+    display: flex;
+    flex-direction: column;
     
 }
 .plan-highlighted{
@@ -135,6 +136,8 @@
     text-align: center;
     margin:0;
     padding:0;
+    display: flex;
+    flex-direction: column;
 }
 
 .key-feature__image{
@@ -227,20 +230,31 @@
     .plan__lists{
         width:100%;
         margin:0 auto; 
-        text-align: center;
-        
+        display: flex;
+        justify-content: center;
+        align-items: center;
        } 
     
         .plan{
             width:30%;
-            display:inline-block;
-            vertical-align: center;
+            margin:0;
             min-width: 10rem;
-            max-width: 25rem;     
+            max-width: 25rem;
+            height: 28rem; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;    
         }
     
         .plan-highlighted{
             box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+            height: 30rem;
+            z-index: 50;
+        }
+
+        .key-feature__lists{
+           flex-direction: row;
+           justify-content: center;
         }
     
         .key-feature{
