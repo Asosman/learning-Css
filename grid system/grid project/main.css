@@ -7,7 +7,11 @@
     grid-template-rows:[row-1-start] 5rem [row-1-end row-2-start] minmax(10px, auto) [row-2-end row-3-start] 3rem [row-3-end];
     /* grid-column-gap:20px;
     grid-row-gap:10px; */
+    grid-template-areas: "header header header header"
+                         "side main main main"
+                         "footer footer footer footer";
     grid-gap:10px;
+
 }
 
 .el1 {
@@ -19,7 +23,8 @@
     grid-row-end: row-3-start; */
     /* grid-row:row-1-start / row-3-start; */
     /* grid area shorthand */
-    grid-area:row-1-start / 1 / row-3-start / 1;
+    /* grid-area:row-1-start / 1 / row-3-start / 1; */
+    grid-area:header;
 
 
 }
@@ -28,11 +33,12 @@
     background: rgba(255, 0, 0, 0.5);
     /* grid-column-start:1;
     grid-column-end: 5; */
-    grid-column: 1 / 5 ;
+    /* grid-column: 1 / 5 ; */
     /* grid shorthand */
     /* grid-row-start: row-2-start;
     grid-row-end: row-3-start; */
-    grid-row:row-2-start/ row-3-start;
+    /* grid-row:row-2-start/ row-3-start; */
+    grid-area:main;
     z-index:10;
 }
 
@@ -43,10 +49,12 @@
     grid-column:2 / 5;
     /* grid-row-start:row-1-start;
     grid-row-end:row-3-start; */
-    grid-row:row-1-start / row-3-start;
+    /* grid-row:row-1-start / row-3-start; */
+    grid-area:side;
 
 }
 
 .el4 {
     background: rgba(0, 4, 255, 0.5);
+    grid-area:footer;
 }
