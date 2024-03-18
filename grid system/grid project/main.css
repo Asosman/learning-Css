@@ -9,10 +9,18 @@
 
 .el1 {
     background: rgba(255, 154, 72, 0.5);
+    grid-column-start:1;
+    grid-column-end: 3;
+    /* grid-row-start: 2;
+    grid-row-end: 3; */
 }
 
 .el2 {
     background: rgba(255, 0, 0, 0.5);
+    grid-column-start:1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 
 .el3 {
