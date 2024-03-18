@@ -5,6 +5,9 @@
     /* grid-template-columns:150px 1fr 20% 2fr; */
     grid-template-columns:repeat(4, 25%);
     grid-template-rows:[row-1-start] 5rem [row-1-end row-2-start] minmax(10px, auto) [row-2-end row-3-start] 3rem [row-3-end];
+    /* grid-column-gap:20px;
+    grid-row-gap:10px; */
+    grid-gap:10px;
 }
 
 .el1 {
