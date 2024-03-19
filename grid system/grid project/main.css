@@ -18,6 +18,16 @@
 
 }
 
+@media(max-width:40rem){
+   .container{
+    grid-template-rows:[row-1-start] 5rem [row-1-end row-2-start] minmax(10px, 20rem) [row-2-end row-3-start] 3rem [row-3-end row-4-start] 4rem[row-4-end];
+    grid-template-areas: "header header header header"
+                         "main main main main"
+                         "side side side side"
+                         "footer footer footer footer";
+   }
+}
+
 .el1 {
     background: rgba(255, 154, 72, 0.5);
     /* grid-column-start:1;
