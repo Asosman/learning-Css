@@ -1,0 +1,126 @@
+main{
+    padding-top:32px;
+}
+
+.clearfix{
+    clear: both;
+}
+
+.background{
+    background: url('../images/plans-background.jpg') center/cover;
+    filter:grayscale(40%);
+    position:fixed;
+    width:100vw;
+    height:100vh;
+    z-index:-1;
+}
+
+.packages{
+    padding:32px;
+    width:80%;
+    border:4px solid #0e4f1f;
+    border-left:none;
+    margin:24px 0;
+    position:relative;
+    overflow:hidden;
+}
+
+.packages__badge{
+    position:absolute;
+    top:0;
+    right:0;
+    /* margin:20px; */
+    color:#fff;
+    background-color:#ff5454;
+    padding:8px;
+    font-size:1rem;
+    text-align:center;
+    transform: rotateZ(45deg) translateX(9rem) translateY(-6rem);
+    transform-origin: center;
+    width:32rem;
+    text-align: center;
+
+}
+
+
+.packages:hover,
+.packages:active{
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-color:#ff5454;
+}
+.packages a{
+    color:inherit;
+    text-decoration: none;
+    display: block;
+}
+
+.packages__subtitle{
+    color:#979797;
+}
+
+.packages__info{
+    border:1px solid #0e4f1f;
+    color:#0e4f1f;
+    font-size:20px;
+    padding:16px;
+    background-color: #fff;
+}
+
+#plus{
+    background-color: rgba(213,255,220,0.95);
+}
+
+#free{
+    background-color: rgba(234,252,237,0.95);
+    border-left:4px solid #0e4f1f;
+    border-right:none;
+    float:right;
+    text-align: right;
+}
+
+#free:hover,
+#free:active{
+    border-left-color: #ff5454;
+}
+
+#prenium{
+    background-color: rgba(14,79,31,0.95);
+    /* clear: both; */
+}
+
+#prenium .packages__title{
+    color:#fff;
+}
+
+#prenium .packages__subtitle{
+    color:#bbb;
+}
+
+
+@media (min-width:40rem){
+  main{
+    max-width: 1500px;
+    margin:0 auto;
+   
+  }
+
+
+ 
+}
+
+@media (min-width:1500px){
+    .packages{
+        border-left:4px solid #0e4f1f;
+      
+        }
+      
+        #free{
+          
+          border-right:4px solid #0e4f1f;
+      }
+      
+        #free:hover,
+        #free:active{
+          border-right-color: #ff5454;
+      }
+}
