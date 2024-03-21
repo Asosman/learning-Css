@@ -20,13 +20,16 @@ body{
 }
 .backdrop{
     position:fixed;
+    display:none;
     width:100vw;
     height: 100vh;
     background-color: rgb(0,0,0,0.5);
     left: 0;
     top:0;
     z-index:60;
+    opacity: 0;
     display:none;
+    transition: opacity 0.2s linear;
 }
 
 
@@ -125,6 +128,13 @@ main{
     color:#b66161;
     border-bottom:3px solid #fff;
 }
+
+.main-nav__item-cta {
+    animation:wiggle 200ms 3s 8 alternate;
+    /* background-color: rgb(192, 199, 192); */
+
+}
+
 .main-nav__item-cta a,
 .mobile-nav__item--cta a{
     color:#fff;
@@ -219,6 +229,8 @@ main{
         display:inline-block;
     }
     
+  
+
     .main-footer__link{
         display:inline-block;
         margin:0 1rem;
@@ -233,4 +245,13 @@ main{
        justify-content: center;
     }
     
+}
+
+@keyframes wiggle{
+    from{
+        transform:rotateY(-10deg);
+    }
+    to{
+        transform:rotateZ(10deg);
+    }
 }
